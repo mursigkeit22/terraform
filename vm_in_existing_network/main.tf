@@ -2,6 +2,7 @@
 module "yandex_cloud_instance" {
   source                      = "../modules/yc_instance"
   username                    = var.username
+  hashed_passwd               = var.hashed_passwd
   ssh_public_key_path         = var.ssh_public_key_path
   ssh_public_key_default_path = var.ssh_public_key_default_path
   zone                        = var.zone

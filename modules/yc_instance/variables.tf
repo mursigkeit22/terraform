@@ -98,6 +98,12 @@ variable "username" {
   nullable    = false
 }
 
+variable "hashed_passwd" {
+  type        = string
+  description = "hashed password for user $username"
+  nullable    = true
+}
+
 variable "ssh_public_key_path" {
   type        = string
   description = "file with ssh public key for user <username>"

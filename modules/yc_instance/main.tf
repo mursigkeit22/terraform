@@ -44,6 +44,7 @@ data "template_file" "user_data" {
 
         vars = {
             username       = var.username
+            hashed_passwd  = var.hashed_passwd
             ssh_public_key = file(var.ssh_public_key_path)
         }
     }

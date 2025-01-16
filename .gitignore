@@ -39,3 +39,6 @@ terraform.rc
 
 # ssh key
 ssh_key.pub
+ssh_key*
+
+.idea
